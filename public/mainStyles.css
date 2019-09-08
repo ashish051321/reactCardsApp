@@ -1,0 +1,6 @@
+/* sidebar stylin */
+
+.list-group-item{
+    background-color:transparent !important;
+    border-color: white !important;
+}
