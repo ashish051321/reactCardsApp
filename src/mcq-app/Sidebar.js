@@ -7,9 +7,8 @@ export default class Sidebar extends Component {
             <div className="pt-2">
 
                 <ul className="w-100 list-group list-group-flush">
-                    <li className="list-group-item">Cras justo odio</li>
-                    <li className="list-group-item">Dapibus ac facilisis in</li>
-                    <li className="list-group-item">Vestibulum at eros</li>
+                    {this.props.titles.map(title =>
+                        (<li onClick={() =>{alert(title+' - was clicked !');}} className="list-group-item">{title}</li>))}
                 </ul>
 
             </div>
